@@ -6,13 +6,10 @@ storageClass: "do-block-storage"
 replicaCount: 1
 failure: false
 image:
-  repository: registry.digitalocean.com/diabhey/hivenetes/bots
+  repository: registry.digitalocean.com/relend/bots
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "dagger"
-
-imagePullSecrets:
-  - name: "registry-diabhey"
 nameOverride: ""
 fullnameOverride: ""
 
